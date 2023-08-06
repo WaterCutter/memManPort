@@ -86,6 +86,7 @@ heap_2.c 还用到一个宏定义 `portBYTE_ALIGNMENT_MASK`：
 projdefs.h 也是需要的，里面有 `true` 和 `false` 的宏：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/347d2fe2c02b4e4f821845ab6dd556b7.png#pic_center)
 ### 2.4 可用源码
+Github仓库：[memManPort](https://github.com/WaterCutter/memManPort)
 
 ## 3 测试
 可以用下面这个demo来测试移植结果的可用性，只要pb和pc值结果一致，那就基本正确了。
