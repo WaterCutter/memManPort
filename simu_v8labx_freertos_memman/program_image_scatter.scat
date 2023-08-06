@@ -1,0 +1,19 @@
+LOAD_REGION 0x0004000000 0x20000
+{
+	P0 +0
+    {
+       start_up.o
+    }
+    P1 +0
+    {
+        *(+ro)
+        *(+rw, +zi)
+    }
+
+    ARM_LIB_STACK	+0 ALIGN 8 EMPTY 0x10000 {}
+
+    IRQ_STACKS		+0 ALIGN 8 EMPTY 0x10000 {}
+	
+    FIQ_STACKS		+0 ALIGN 8 EMPTY 0x10 {}
+}
+     
